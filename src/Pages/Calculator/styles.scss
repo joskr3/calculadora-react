@@ -1,0 +1,179 @@
+p {
+    color: white;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    background-color: #242424;
+    border: 1px solid black;
+
+
+    &__resultado {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        background-color: black;
+        height: 15vh;
+        & > div {
+            color: white;
+            font-size: 4rem;
+            font-weight: bold;
+            padding: 1rem;
+        }
+    }
+    &__botones {
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        height: 85vh;
+        grid-auto-flow: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.zero {
+    grid-area: 5 / 1 / 6 / 3;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.operaciones {
+    grid-area: 1 / 4 / 6 / 5;
+}
+
+.acciones {
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: #484848;
+}
+
+.dot {
+    grid-area: 5 / 3 / 6 / 4;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.uno {
+    grid-area: 4 / 1 / 5 / 2;
+    margin: auto;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.dos {
+    grid-area: 4 / 2 / 5 / 3;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.tres {
+    grid-area: 4 / 3 / 5 / 4;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.cuatro {
+    grid-area: 3 / 1 / 4 / 2;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.cinco {
+    grid-area: 3 / 2 / 4 / 3;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.seis {
+    grid-area: 3 / 3 / 4 / 4;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.siete {
+    grid-area: 2 / 1 / 3 / 2;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.ocho {
+    grid-area: 2 / 2 / 3 / 3;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.nueve {
+    grid-area: 2 / 3 / 3 / 4;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.division {
+    grid-area: 1 / 4 / 2 / 5;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.multiplicacion {
+    grid-area: 2 / 4 / 3 / 5;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.resta {
+    grid-area: 3 / 4 / 4 / 5;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.suma {
+    grid-area: 4 / 4 / 5 / 5;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.igual {
+    grid-area: 5 / 4 / 6 / 5;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.resetear {
+    grid-area: 1 / 1 / 2 / 2;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.abs {
+    grid-area: 1 / 2 / 2 / 3;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.porcentaje {
+    grid-area: 1 / 3 / 2 / 4;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
