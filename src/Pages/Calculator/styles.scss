@@ -1,15 +1,22 @@
-p {
-    color: white;
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.contenedor {
+main {
     display: flex;
     flex-direction: column;
-    background-color: #242424;
-    border: 1px solid black;
-
-
+    justify-content: center;
+    align-items: center;
+}
+.contenedor {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
     &__resultado {
+        width: 50%;
         display: flex;
         justify-content: flex-end;
         flex-direction: row;
@@ -22,158 +29,24 @@ p {
             padding: 1rem;
         }
     }
-    &__botones {
-        background-color: black;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
-        height: 85vh;
-        grid-auto-flow: row;
-        align-items: center;
-        justify-content: center;
-    }
+}
+.item {
+    border: 0.5px solid black;
+    background-color: #676767;
 }
 
-.zero {
-    grid-area: 5 / 1 / 6 / 3;
+.boton {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    background-color: #f2a33c;
+    border: 0.5px solid black;
+    font-size: 3rem;
     color: white;
-    font-size: 2rem;
-    margin: auto;
+    text-align: center;
+    padding-top: 2rem;
+    cursor: pointer;
 }
-
-.operaciones {
-    grid-area: 1 / 4 / 6 / 5;
-}
-
-.acciones {
-    grid-area: 1 / 1 / 2 / 4;
-    background-color: #484848;
-}
-
-.dot {
-    grid-area: 5 / 3 / 6 / 4;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.uno {
-    grid-area: 4 / 1 / 5 / 2;
-    margin: auto;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.dos {
-    grid-area: 4 / 2 / 5 / 3;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.tres {
-    grid-area: 4 / 3 / 5 / 4;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.cuatro {
-    grid-area: 3 / 1 / 4 / 2;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.cinco {
-    grid-area: 3 / 2 / 4 / 3;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.seis {
-    grid-area: 3 / 3 / 4 / 4;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.siete {
-    grid-area: 2 / 1 / 3 / 2;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.ocho {
-    grid-area: 2 / 2 / 3 / 3;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.nueve {
-    grid-area: 2 / 3 / 3 / 4;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.division {
-    grid-area: 1 / 4 / 2 / 5;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.multiplicacion {
-    grid-area: 2 / 4 / 3 / 5;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.resta {
-    grid-area: 3 / 4 / 4 / 5;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.suma {
-    grid-area: 4 / 4 / 5 / 5;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.igual {
-    grid-area: 5 / 4 / 6 / 5;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.resetear {
-    grid-area: 1 / 1 / 2 / 2;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.abs {
-    grid-area: 1 / 2 / 2 / 3;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
-}
-
-.porcentaje {
-    grid-area: 1 / 3 / 2 / 4;
-    color: white;
-    font-size: 2rem;
-    margin: auto;
+.boton:hover{
+    background-color: white;
+    color: #ccc;
 }
